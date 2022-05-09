@@ -14,7 +14,7 @@ public class HlavniProgram {
         //TODO tady bude váš kód - vytvoření instance třídy Pocitac, zapnutí, vpynutí, výpis hodnot.
         System.out.println("Program spuštěn.");
         Pocitac danciPocitac = new Pocitac();
-        //System.out.println(danciPocitac.toString());
+        System.out.println(danciPocitac.toString());
         danciPocitac.zapniSe();
 
         Procesor danciProcesor = new Procesor();
@@ -24,9 +24,9 @@ public class HlavniProgram {
         danciProcesor.setVyrobce("HP inc");
 
 
-        //Pamet danciPamet = new Pamet();
-        //danciPamet.kapacita = 8_000_000_000L;
-        //danciPamet.setKapacita(8_000_000_000L);
+        Pamet danciPamet = new Pamet();
+        danciPamet.kapacita = 8_000_000_000L;
+        danciPamet.setKapacita(8_000_000_000L);
 
 
         Disk danciDisk = new Disk();
@@ -43,8 +43,8 @@ public class HlavniProgram {
        // System.out.println(danciPocitac.toString());
 
         danciPocitac.zapniSe();
-        //dancipocitac.zapniSe();      // Vypise chybu, protoze pocitac uz bezi
-       // danciPocitac.vypniSe();
+        danciPocitac.zapniSe();      // Vypise chybu, protoze pocitac uz bezi
+        danciPocitac.vypniSe();
 
         danciPocitac.vypniSe();      // Nevypise chybu, ale nic neprovede,
        // danciPocitac.vypniSe();

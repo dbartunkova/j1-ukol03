@@ -19,10 +19,6 @@ public class Pocitac {
     public void setPevnyDisk(Disk danciDisk) {
     }
 
-    public void zapniSe() {
-
-        System.out.println("Počítač je zapnutý.");
-    }
 
     public boolean getJeZapnuty() {
         return jeZapnuty;
@@ -33,9 +29,28 @@ public class Pocitac {
     }
 
 
-    public String vypniSe() {
-        return "Počítač je vypnutý";
+    public boolean zapniSe() {
+        if (ram == null) {
+            System.err.println("Není možno zapnout počítač.");
+                return jeZapnuty;
+            } else {
+                System.out.println("Počítač se zapnul");
+                return jeZapnuty;
+            }
+        }
+
+
+    public Boolean vypniSe() {
+        if (jeZapnuty) {
+            jeZapnuty = false;
+            System.out.println("Počítač se vypnul");
+            return jeZapnuty;
+        } else {
+            System.out.println("Počítač je už vypnutý");
+            return jeZapnuty;
+        }
     }
+
 }
 
 
