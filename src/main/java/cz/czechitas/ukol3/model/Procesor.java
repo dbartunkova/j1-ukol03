@@ -1,8 +1,5 @@
 package cz.czechitas.ukol3.model;
 
-//Intel(R) Core(TM) i3-8145U CPU @ 2.10GHz   2.30 GHz
-//rychlost -- CPU
-
 public class Procesor {
     public String vyrobce;
     public long rychlost;
